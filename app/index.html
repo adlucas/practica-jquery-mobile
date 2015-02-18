@@ -22,15 +22,16 @@
     <![endif]-->
 
 
-    <div class="wrap" data-role="content">
-            <section id="login" class="box">
-                <div data-role="header">
+    <div class="wrap" data-role="page" id="login">
+           
+                <div data-role="header" data-theme="b">
                     <h1> Login </h1>
                 </div>
-                <div class="boxBody">
+                <div data-role="content">
+                <br>
                     <form id="login" action="#curso" method="POST">
                         <label for="usuario">Usuario:</label>
-                        <input type="text" name="usuario" id="usuario" placeholder="" />
+                        <input type="text"  name="usuario" id="usuario" placeholder="" />
                         <label for="password">Contraseña:</label>
                         <input type="password" name="password" id="password" placeholder="" />
                         <fieldset data-role="controlgroup">
@@ -40,19 +41,90 @@
                         <label for="chck-rememberme">Recuerdame</label>
 
                         </fieldset>
-                        <a data-role="button" href="#curso">Entrar</a>
-                        
+                        <br>
+                        <div class="center-wrapper">
+                        <a data-role="button" data-icon="action"  data-inline="true" data-theme="a" href="#curso" >Entrar</a>
+                        </div>
 
                     </form>
-                </div>
+                
+                <br>
                 <footer id="footerLogin" class="sectionFooter">
                     
                     <a href="#" title="He olvidado mi contraseña o usuario">¿Olvido su usuario o contraseña?</a>
                 </footer>
-            </section>
+           </div>
         </div>
 
-        
+        <div class="wrap" data-role="page" id="curso">
+            
+                <div data-role="header" data-theme="b">
+                  <a href="index.html" data-icon="back">Atras</a>
+
+                    <h1> Seleccionar Alumno </h1>
+
+  
+                </div>
+                <br>
+                <div data-role="content">
+                    <label for="curso" class="select">Curso:</label>
+                    <select name="curso" id="curso">
+                    <optgroup label="Informatica y comunicaciones">
+                      <option value="daw">DAW</option>
+                      <option value="dam">DAM</option>
+                      <option value="asir">ASIR</option>
+                      <option value="smr">SMR</option>
+                      </optgroup>
+                      <optgroup label="Imagen y sonido">
+
+                      <option value="li">LI</option>
+                      <option value="vdjs">VDJS</option>
+                      <option value="a3d">A3D</option>
+                      <option value="icta">ICTA</option>
+                      </optgroup>
+                      <optgroup label="Comercio y marketing">
+                      <option value="com">Comercio</option>
+                      <option value="comI">Comercio Internacional</option>
+                      <option value="com">Trans. y logistica</option>
+                      </optgroup>
+                    </select>
+                    <label for="alumo" class="select">Alumno:</label>
+                    <select name="alumno" id="alumno">
+                      <option value="adl">Angel de Lucas</option>
+                      <option value="pp">Pedro Perez</option>
+                      <option value="jp">Jose Lopez</option>
+                      <option value="mg">Maria Gonzalez</option>
+                     
+                    </select>
+                    <br>
+                     
+                    <div class="center-wrapper">
+                      <a data-role="button"  id="a" data-icon="edit"  data-inline="true" data-theme="a" href="#ev">Evaluar</a>
+                    </div>
+                     
+                </div>
+                
+            
+        </div>
+
+         <div class="wrap" data-role="page" id="ev">
+            
+                <div data-role="header" data-theme="b">
+                  <a href="index.html/#curso" data-icon="back">Atras</a>
+
+                    <h1> Evaluacion </h1>
+
+  
+                </div>
+                 <div data-role="content">
+
+
+
+            </div>
+        </div>
+
+
+
 
 
     <!-- build:js(.) scripts/vendor.js -->
