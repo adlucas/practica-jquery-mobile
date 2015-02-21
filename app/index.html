@@ -118,7 +118,7 @@
                 </div>
                  <div data-role="content">
                     <fieldset data-role="controlgroup" data-mini="true">
-                    
+
                             <legend>Entrada del alumno:</legend>
                             
                             <input type="radio" name="entrada" id="radio-choice-10" value="choice-1">
@@ -307,28 +307,49 @@
                       </fieldset>
 
                        <div class="center-wrapper">
-                        <a data-role="button" data-icon="action"  data-inline="true" data-theme="a" href="#nota" >Enviar</a>
-                        </div>
+                      <a data-role="button"  id="b" data-icon="edit"  data-inline="true" data-theme="a" href="#nota">Enviar</a>
+                    </div>
             </div>
 
+            </div>
+      
 
 
             <!-- Datos del alumno-->
+        
+
+
+
+
+
+<!--nota-->
         <div class="wrap" data-role="page" id="nota">
             
                 <div data-role="header" data-theme="b">
-                  <a href="index.html" data-icon="back">Atras</a>
+                  <a href="index.html/#ev" data-icon="back">Atras</a>
 
-                    <h1> Seleccionar Alumno </h1>
+                    <h1> Nota del alumno </h1>
 
   
                 </div>
                 <br>
                 <div data-role="content">
-              
-                
+                   
+                   <label for="slider-1">Contenido del proyecto (65%):</label>
+                   <input type="range" name="slider-1" id="slider-1" min="0" max="6.5" value="3.2" step=".1" data-highlight="true"> 
+                      
+
+                      <label for="calidad">Calidad de la presentacion (10%):</label>
+                   <input type="range" name="calidad" id="calidad" min="0" max="1" value="0.5" step=".1" data-highlight="true"> 
+                        
+                      <label for="calidad">Expresion oral (25%):</label>
+                   <input type="range" name="calidad" id="calidad" min="0" max="2.5" value="1.2" step=".1" data-highlight="true"> 
+                                   
+                </div>
+                 <div class="center-wrapper">
+                      <a data-role="button"  id="d" data-icon="edit"  data-inline="true" data-theme="a" href="#nota">Enviar nota</a>
+                    </div>
             
-        </div>
         </div>
 
 
