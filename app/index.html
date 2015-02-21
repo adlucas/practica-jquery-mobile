@@ -21,7 +21,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
+<!-- Datos de login-->
     <div class="wrap" data-role="page" id="login">
            
                 <div data-role="header" data-theme="b">
@@ -55,7 +55,7 @@
                 </footer>
            </div>
         </div>
-
+<!-- Datos del alumno-->
         <div class="wrap" data-role="page" id="curso">
             
                 <div data-role="header" data-theme="b">
@@ -106,7 +106,7 @@
                 
             
         </div>
-
+<!-- Cuestionario evaluacion-->
          <div class="wrap" data-role="page" id="ev">
             
                 <div data-role="header" data-theme="b">
@@ -117,10 +117,218 @@
   
                 </div>
                  <div data-role="content">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                    
+                            <legend>Entrada del alumno:</legend>
+                            
+                            <input type="radio" name="entrada" id="radio-choice-10" value="choice-1">
+                            <label for="radio-choice-10">Buena</label>
+                            <input type="radio" name="entrada" id="radio-choice-20" value="choice-2" checked="checked">
+                            <label for="radio-choice-20" data-icon="arrow-d-l">Regular</label>
+                            <input type="radio" name="entrada" id="radio-choice-30" value="choice-3">
+                            <label for="radio-choice-30" data-icon="arrow-u-r">Mala</label>
+                            
+                        </fieldset>
+
+                           <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Indumentaria:</legend>
+                            
+                            <input type="radio" name="indumentaria" id="radio-choice-11" value="choice-1">
+                            <label for="radio-choice-11">Adecuada</label>
+                            <input type="radio" name="indumentaria" id="radio-choice-21" value="choice-2" checked="checked">
+                            <label for="radio-choice-21" data-icon="arrow-d-l">Regular</label>
+                            <input type="radio" name="indumentaria" id="radio-choice-31" value="choice-3">
+                            <label for="radio-choice-31" data-icon="arrow-u-r">Mala</label>
+                            
+                        </fieldset>
 
 
 
+                  <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Introducción:</legend>
+                            
+                           <div class="ui-checkbox">
+                              <label for="introA" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">¿Es atractiva?</label>
+                              <input type="checkbox" id="introA" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="introC" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">¿Queda claro el proyecto?</label>
+                              <input type="checkbox" id="introC" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                                                          
+                        </fieldset>
+
+                <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Desarrollo:</legend>
+                            
+                           <div class="ui-checkbox">
+                              <label for="desA" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Orden de las ideas</label>
+                              <input type="checkbox" id="desA" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="desB" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Claridad en la exposicion</label>
+                              <input type="checkbox" id="desB" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="desC" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Aclaracion de terminos tecnicos</label>
+                              <input type="checkbox" id="desC" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                                                          
+                        </fieldset>
+
+
+                          <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Conclusion:</legend>
+                            
+                           <div class="ui-checkbox">
+                              <label for="conA" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Queda claro el proyecto</label>
+                              <input type="checkbox" id="conA" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="conB" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Lo vende bien</label>
+                              <input type="checkbox" id="conB" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                                                                                      
+                        </fieldset>
+
+
+                     <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Seguridad en lo que expone:</legend>
+                            
+                            <input type="radio" name="seguridad" id="segA" value="choice-1" checked="checked">
+                            <label for="segA">Si</label>
+                            <input type="radio" name="seguridad" id="segB" value="choice-2" >
+                            <label for="segB" data-icon="arrow-d-l">No</label>
+                            
+                      </fieldset>
+
+                      <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Entusiasmo en lo que expone:</legend>
+                            
+                            <input type="radio" name="entu" id="enA" value="choice-1" checked="checked">
+                            <label for="enA">Si</label>
+                            <input type="radio" name="entu" id="enB" value="choice-2" >
+                            <label for="enB" data-icon="arrow-d-l">No</label>
+                            
+                      </fieldset>
+
+
+                  <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Expresión oral:</legend>
+                            
+                           <div class="ui-checkbox">
+                              <label for="expA" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Entonación adecuada</label>
+                              <input type="checkbox" id="expA" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="expB" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Volumen adecuado</label>
+                              <input type="checkbox" id="expB" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="expC" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Velocidad adecuada</label>
+                              <input type="checkbox" id="expC" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="expD" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Voz sin vacilaciones</label>
+                              <input type="checkbox" id="expD" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="expE" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Pausas adecuada</label>
+                              <input type="checkbox" id="expE" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="expF" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">No abusa de muletillas</label>
+                              <input type="checkbox" id="expF" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                                                          
+                        </fieldset>
+
+                         <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Duracion:</legend>
+                            
+                            <input type="radio" name="dura" id="duA" value="choice-1" >
+                            <label for="duA">Larga</label>
+                            <input type="radio" name="dura" id="duB" value="choice-2" checked="checked" >
+                            <label for="duB" data-icon="arrow-d-l">Correcta</label>
+                            <input type="radio" name="dura" id="duC" value="choice-2" >
+                            <label for="duC" data-icon="arrow-d-l">Corta</label>
+                            
+                      </fieldset>
+
+
+                      <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Lenguaje no verbal:</legend>
+                            
+                           <div class="ui-checkbox">
+                              <label for="lgA" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Mira a todo el auditorio</label>
+                              <input type="checkbox" id="lgA" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="lgB" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Expresion facial positiva</label>
+                              <input type="checkbox" id="lgB" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="lgC" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">Posicion correcta del cuerpo</label>
+                              <input type="checkbox" id="lgC" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="lgD" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">No tiene tics</label>
+                              <input type="checkbox" id="lgD" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                            <div class="ui-checkbox">
+                              <label for="lgE" class="ui-btn ui-btn-inherit ui-btn-icon-left ui-checkbox-off">No muestra nerviosismo</label>
+                              <input type="checkbox" id="lgE" data-corners="false" data-enhanced="true"></input>
+                            </div>
+                                               
+                        </fieldset>
+
+
+                        <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Capta la atencion del publico:</legend>
+                            
+                            <input type="radio" name="publico" id="pA" value="choice-1" checked="checked">
+                            <label for="pA">si</label>
+                            <input type="radio" name="publico" id="pB" value="choice-2"  >
+                            <label for="pB" data-icon="arrow-d-l">No</label>
+                           
+                            
+                      </fieldset>
+
+
+                      <fieldset data-role="controlgroup" data-mini="true">
+                            <legend>Responde las preguntas de forma coherente:</legend>
+                            
+                            <input type="radio" name="preg" id="preA" value="choice-1" checked="checked">
+                            <label for="preA">si</label>
+                            <input type="radio" name="preg" id="preB" value="choice-2"  >
+                            <label for="preB" data-icon="arrow-d-l">No</label>
+                           
+                            
+                      </fieldset>
+
+                       <div class="center-wrapper">
+                        <a data-role="button" data-icon="action"  data-inline="true" data-theme="a" href="#nota" >Enviar</a>
+                        </div>
             </div>
+
+
+
+            <!-- Datos del alumno-->
+        <div class="wrap" data-role="page" id="nota">
+            
+                <div data-role="header" data-theme="b">
+                  <a href="index.html" data-icon="back">Atras</a>
+
+                    <h1> Seleccionar Alumno </h1>
+
+  
+                </div>
+                <br>
+                <div data-role="content">
+              
+                
+            
+        </div>
         </div>
 
 
